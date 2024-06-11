@@ -1,11 +1,15 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*:focus {
+    outline: none;
 }
 
 :root {
@@ -29,6 +33,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+/* LOGIN */
+
+
 .login {
     background-color: #171717cc;
     padding: 1.4rem 3rem;
@@ -38,7 +47,10 @@ body {
     align-content: center;
     align-items: center;
     text-shadow: 2px 2px 4px black;
+
+    display: none;                              /*TAG QUE REMOVE O LOGIN*/
 }
+
 .login__header {
     font-size: 2rem;
     text-align: center;
@@ -59,12 +71,100 @@ body {
     border-color: black;
     box-shadow: 0px 0px 4px black;
 }
+
 .login__button {
     margin: 0 0 1rem 0;
+    transition: 0.2s;
 }
 
-/*
-.login--span {
-    position:relative;
-    float: right;
+.login__button:hover {
+    background-color: #FFF;
+    transition: 0.2s;
+}
+
+
+/* CHAT */
+
+
+.chat {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*display: none;                              /*TAG QUE REMOVE O CHAT*/
+}
+
+.chat__messages {
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px 32px 72px 32px;
+    flex-grow: 1;
+    word-wrap : break-word;
+}
+
+.chat__messages div {
+    padding: 8px;
+    width: 100%;
+    max-width: 240px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    line-height: 24px;
+}
+
+.chat__box {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chat__input {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    flex-grow: 1;
+    background-color: #212121;
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.chat__button {
+    cursor: pointer;
+    color: #f0f0f0;
+    border: none;
+    background: none;
+}
+
+.chat__button span {
+    font-size: 2rem;
+}
+
+.message--me {
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 10px 10px 0px 10px;
+    align-self: flex-end;
+}
+
+.message--other {
+    background-color: #333;
+    color: #f0f0f0;
+    border-radius: 10px 10px 10px 0px;
+    align-self: flex-start;
+}
+
+
+.message--sender {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: forestgreen;
 }

@@ -12,15 +12,32 @@
 </head>
 <body>
     <section class="aling-center">
+
         <section class="login">
             <h1 class="login__header">Login</h1>
-            <input class="login__input" type="text" name="userName" id="userName" placeholder="Insira seu nome">
+            <input class="login__input" type="text" id="userNameInput" placeholder="Insira seu nome" required>
             <button class="login__button" type="submit" id="loginButton"> Entrar</button>
         </section>
+
+        <section class="chat">
+            <section class="chat__messages">
+                <div class="message--me">AOBA</div>
+                <div class="message--me">Bão moço?🤔</div>
+                <div class="message--other"><span class="message--sender">Eufrazino</span>Tudo joia 👍</div>
+            </section>
+
+                <div class="chat__box">
+                    <input class="chat__input" type="text" id="userTextInput" placeholder="Desembuche logo" required>
+                    <button class="chat__button" type="submit" id="chatButton">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+        </section>
+
     </section>
 
 
-    <!-- <span class="login--span material-symbols-outlined">send</span> SEND CHARACTER-->
+    
 
     <script src="script.js"></script>
 </body>
