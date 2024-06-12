@@ -48,7 +48,7 @@ body {
     align-items: center;
     text-shadow: 2px 2px 4px black;
 
-    display: none;                              /*TAG QUE REMOVE O LOGIN*/
+    display: flex;                              /*TAG QUE REMOVE O LOGIN*/
 }
 
 .login__header {
@@ -92,7 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*display: none;                              /*TAG QUE REMOVE O CHAT*/
+    display: none;                              /*TAG QUE REMOVE O CHAT*/
 }
 
 .chat__messages {
