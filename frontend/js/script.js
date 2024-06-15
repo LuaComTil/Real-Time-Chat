@@ -51,7 +51,7 @@ const handleLogin= (event) => {
     login.style.display = "none"
     chat.style.display = "flex"
 
-    websocket = new WebSocket("https://real-time-chat-zsno.onrender.com")
+    websocket = new WebSocket("wss://real-time-chat-zsno.onrender.com")
     websocket.onmessage = processMessage
 
 }
