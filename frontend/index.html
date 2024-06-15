@@ -5,44 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./css/style.css">
-
-    <title>CHAT-REAL-TIME</title>
+    <title>Chat Real Time</title>
 </head>
 <body>
-
     <section class="container">
-        
-        <section class="login">
-            <h2>Login</h2>
-            <form class="login__form">
-                 <input type="text" class="login__input" placeholder="Escreva seu nome" required>
-                 <button type="submit" class="submit" class="login__buton">Entrar</button>
+        <section class="login" id="login">
+            <h2 class="login__header">Login</h2>
+            <form class="login__form" id="login__form">
+                 <input type="text" class="login__input" id="login__input" placeholder="Insira seu nome" autofocus required>
+                 <button type="submit" class="login__button">Entrar</button>
             </form>
         </section>
-        <section class="chat">
-            <section class="chat__messages">
-                <!-- <div class="message--self">Hello, world!</div>
-                <div class="message--self">MACACOOOOOOO!</div>
-                <div class="message--self">Tomiiiiii!</div>
-                
-                <div class="message--other">
-                    <span class="message--sender">Miguel</span>
-                    olá porra
-                </div> -->
+        <section class="chat" id="chat">
+            <section class="chat__messages" id="chat__messages">
+                <!--MESSAGES-->
             </section>
-            <form class="chat__form">
-                <input type="text" class="chat__input" placeholder="Desembuche logo !" required>
-                <button type="submit" class="submit" class="chat__buton">
-                    <span class="material-symbols-outlined">
-                        Send
-                    </span>
+            <form class="chat__form" id="chat__form">
+                <input type="text" class="chat__input" id="chat__input" placeholder="Desembuche logo!" autofocus required>
+                <button type="submit" class="chat__button">
+                    <span class="material-symbols-outlined">Send</span>
                 </button>
            </form>
         </section>
-
-    </section>    
-
-
+    </section>
 
     <script src="./js/script.js"></script>
 </body>
